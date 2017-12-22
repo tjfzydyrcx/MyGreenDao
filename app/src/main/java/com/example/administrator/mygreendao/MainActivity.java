@@ -19,12 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         userDao = GreenDaoHelper.getDaoSession().getUserDao();
         init();
-/*
-*
-* 嘿嘿 再一次测试
-*
-* */
-
+        Log.e("User", " 嘿嘿 再一次测试==>");
     }
 
     private void init() {
