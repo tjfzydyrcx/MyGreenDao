@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         userDao = GreenDaoHelper.getDaoSession().getUserDao();
         init();
-
+/*
+*
+* 嘿嘿 再一次测试
+*
+* */
 
     }
 
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 User usera = userDao.queryBuilder().where(UserDao.Properties._id.eq(ed1.getText().toString())).unique();
                 if (usera != null)
                     _id = usera.get_id();
-                Log.e("User", "查询全部数据==>" + usera.getUsername() + usera.getNickname()+usera.getNum());
+                Log.e("User", "查询全部数据==>" + usera.getUsername() + usera.getNickname() + usera.getNum());
                 break;
         }
     }
