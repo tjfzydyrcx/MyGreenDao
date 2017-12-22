@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         userDao = GreenDaoHelper.getDaoSession().getUserDao();
         init();
         Log.e("User", " 嘿嘿 再一次测试==>");
+        //嘿嘿，我要拉去了
     }
 
     private void init() {
